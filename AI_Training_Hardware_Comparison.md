@@ -39,6 +39,39 @@
 
 ---
 
+# AI and Robotics Hardware Comparison
+
+This document compares various hardware platforms for their suitability in AI and robotics applications, highlighting their strengths, limitations, and ideal use cases.
+
+## Comparison Table
+
+| Device                  | CPU                          | GPU / Accelerator             | RAM         | Storage Options         | Power Usage | AI Capability                     | Ideal Use Case                          |
+|-------------------------|------------------------------|-------------------------------|-------------|--------------------------|-------------|------------------------------------|-----------------------------------------|
+| **Jetson Nano**         | Quad-core ARM Cortex-A57     | 128-core Maxwell              | 4GB LPDDR4  | microSD, USB, M.2        | Low         | Entry-level AI, inference          | Edge AI, robotics, education            |
+| **Jetson TX2**          | Dual-core Denver + Quad A57  | 256-core Pascal               | 8GB LPDDR4  | eMMC, microSD, SATA      | Low         | Moderate AI, real-time inference   | Drones, robots, industrial AI           |
+| **Raspberry Pi 5**      | Quad-core ARM Cortex-A76     | VideoCore VII                 | 4GB/8GB LPDDR4 | microSD, USB, PCIe     | Very Low    | Basic AI with external accelerators| Hobby robotics, IoT, prototyping        |
+| **Raspberry Pi Zero**   | Single-core ARM11            | None                          | 512MB SDRAM | microSD                  | Ultra Low   | Not suitable for AI                | Simple IoT, sensors, basic control      |
+| **Dell PowerEdge R720** | Dual Intel Xeon E5           | Supports Tesla P40 (24GB)     | Up to 768GB | SAS/SATA, PCIe           | High        | High-performance AI training       | Data center, model training             |
+| **Dell PowerEdge R720xd**| Dual Intel Xeon E5          | Supports Tesla P40 (24GB)     | Up to 768GB | More drive bays than R720| High        | High-performance AI training       | Storage-heavy AI workloads              |
+| **HP DL380 G7**         | Dual Intel Xeon 5600 series  | Optional GPU via PCIe         | Up to 384GB | SAS/SATA                 | High        | Moderate AI with GPU               | Server-based robotics, training         |
+| **HP DL360 G5**         | Dual Intel Xeon 5100 series  | Limited GPU support           | Up to 64GB  | SAS                      | High        | Limited AI capability              | Legacy server tasks, basic robotics     |
+
+## Summary
+
+- **Jetson Nano & TX2**: Great for embedded AI and robotics with real-time inference.
+- **Raspberry Pi 5**: Suitable for lightweight AI tasks with external accelerators.
+- **Raspberry Pi Zero**: Not recommended for AI; best for simple control systems.
+- **Dell R720/R720xd**: Excellent for training large AI models with powerful GPUs.
+- **HP DL380 G7**: Capable of moderate AI workloads with GPU expansion.
+- **HP DL360 G5**: Limited AI use due to older architecture and GPU constraints.
+
+## Recommendations
+
+- For **AI training**: Use Dell R720/R720xd with Tesla P40 or similar GPUs.
+- For **Edge AI and robotics**: Jetson TX2 or Nano are ideal.
+- For **Prototyping and education**: Raspberry Pi 5 offers flexibility and affordability.
+
+
 ## 🧩 Summary
 
 The **Jetson AGX Xavier** is **not a replacement** for a Tesla P40-equipped server when it comes to **training or retraining large AI models**. However, it **excels in edge AI deployment**, real-time inference, and low-power environments.
