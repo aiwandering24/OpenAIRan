@@ -45,20 +45,6 @@ This document compares various hardware platforms for their suitability in AI an
 
 ## Comparison Table
 
-| Device                  | CPU                          | GPU / Accelerator             | RAM         | Storage Options         | Power Usage | AI Capability                     | Ideal Use Case                          |
-|-------------------------|------------------------------|-------------------------------|-------------|--------------------------|-------------|------------------------------------|-----------------------------------------|
-| **Jetson Nano**         | Quad-core ARM Cortex-A57     | 128-core Maxwell              | 4GB LPDDR4  | microSD, USB, M.2        | Low         | Entry-level AI, inference          | Edge AI, robotics, education            |
-| **Jetson TX2**          | Dual-core Denver + Quad A57  | 256-core Pascal               | 8GB LPDDR4  | eMMC, microSD, SATA      | Low         | Moderate AI, real-time inference   | Drones, robots, industrial AI           |
-| **Raspberry Pi 5**      | Quad-core ARM Cortex-A76     | VideoCore VII                 | 4GB/8GB LPDDR4 | microSD, USB, PCIe     | Very Low    | Basic AI with external accelerators| Hobby robotics, IoT, prototyping        |
-| **Raspberry Pi Zero**   | Single-core ARM11            | None                          | 512MB SDRAM | microSD                  | Ultra Low   | Not suitable for AI                | Simple IoT, sensors, basic control      |
-| **Dell PowerEdge R720** | Dual Intel Xeon E5           | Supports Tesla P40 (24GB)     | Up to 768GB | SAS/SATA, PCIe           | High        | High-performance AI training       | Data center, model training             |
-| **Dell PowerEdge R720xd**| Dual Intel Xeon E5          | Supports Tesla P40 (24GB)     | Up to 768GB | More drive bays than R720| High        | High-performance AI training       | Storage-heavy AI workloads              |
-| **HP DL380 G7**         | Dual Intel Xeon 5600 series  | Optional GPU via PCIe         | Up to 384GB | SAS/SATA                 | High        | Moderate AI with GPU               | Server-based robotics, training         |
-| **HP DL360 G5**         | Dual Intel Xeon 5100 series  | Limited GPU support           | Up to 64GB  | SAS                      | High        | Limited AI capability              | Legacy server tasks, basic robotics     |
-
-
-# AI and Robotics Hardware Comparison
-
 | Device                    | CPU                          | GPU                                      | RAM           | Storage                  | Power Usage | AI Capabilities                                                                 | Ideal Use Case                                                                 |
 |--------------------------|-------------------------------|-------------------------------------------|----------------|---------------------------|--------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
 | NVIDIA Jetson Nano       | Quad-core ARM Cortex-A57     | 128-core Maxwell                         | 4GB LPDDR4     | microSD                   | Very Low     | Basic AI inference, computer vision, edge AI                                   | Entry-level robotics, DIY AI projects                                           |
