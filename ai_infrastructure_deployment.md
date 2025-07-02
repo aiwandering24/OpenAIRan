@@ -106,3 +106,49 @@ This document outlines a complete deployment strategy for an AI tech stack using
 - Monitor with Prometheus + Grafana
 
 ---
+
+Image 1 of 1
+Create a realistic network topology diagram for an AI infrastructure setup using actual server and switch images. Include the following:
+
+1. **Servers with real images**:
+   - Dell PowerEdge R720D (LLM Inference Node)
+   - Dell PowerEdge R720XD with NVIDIA Tesla P40 GPU (GPU Model Host)
+   - HP ProLiant DL160 G6 (Vector DB Node)
+   - HP ProLiant DL360 G5 (Frontend/API Gateway)
+   - HP ProLiant DL380 G7 (Orchestration & Monitoring)
+
+2. **Networking hardware with real images**:
+   - HP 48-Port Ethernet Switch
+   - Cisco Small Business Switch
+   - 24-Port Patch Panel
+
+3. **Wiring**:
+   - Use color-coded Cat6 cables:
+     - Blue: Server to switch
+     - Red: Uplink to internet
+     - Green: Management
+   - Show cables routed through the patch panel
+
+4. **IP Assignments and Labels**:
+   - R720D: 192.168.1.101 (llm-node-1)
+   - R720XD: 192.168.1.102 (gpu-node-1)
+   - DL160 G6: 192.168.1.103 (vector-db)
+   - DL360 G5: 192.168.1.104 (frontend-api)
+   - DL380 G7: 192.168.1.105 (orchestrator)
+
+5. **Layout**:
+   - Rack-style layout with labeled units
+   - Logical flow from frontend to backend to model inference
+
+Style: Realistic, technical, clean, with actual hardware images and clear cable routing.
+Create a realistic network topology diagram for an AI infrastructure setup using actual server and switch images. Include the following: 1. **Servers with real images**: - Dell PowerEdge R720D (LLM Inference Node) - Dell PowerEdge R720XD with NVIDIA Tesla P40 GPU (GPU Model Host) - HP ProLiant DL160 G6 (Vector DB Node) - HP ProLiant DL360 G5 (Frontend/API Gateway) - HP ProLiant DL380 G7 (Orchestration & Monitoring) 2. **Networking hardware with real images**: - HP 48-Port Ethernet Switch - Cisco Small Business Switch - 24-Port Patch Panel 3. **Wiring**: - Use color-coded Cat6 cables: - Blue: Server to switch - Red: Uplink to internet - Green: Management - Show cables routed through the patch panel 4. **IP Assignments and Labels**: - R720D: 192.168.1.101 (llm-node-1) - R720XD: 192.168.1.102 (gpu-node-1) - DL160 G6: 192.168.1.103 (vector-db) - DL360 G5: 192.168.1.104 (frontend-api) - DL380 G7: 192.168.1.105 (orchestrator) 5. **Layout**: - Rack-style layout with labeled units - Logical flow from frontend to backend to model inference Style: Realistic, technical, clean, with actual hardware images and clear cable routing.
+
+Download
+
+Add to pages
+
+Copy
+
+
+
+
